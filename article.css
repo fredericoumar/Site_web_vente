@@ -1,0 +1,86 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.container h1{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.product {
+    width: 100px;/*la largeur du container de chaque produit*/
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-radius: 8px;
+    transition: transform 0.3ease;
+}
+.product:hover{
+    transform: scale(1.05);
+}
+.product img{
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    
+}
+/*prix du produit en orange */
+.product p {
+    color: orange;
+}
+/*couleur des bouton ajouts */
+.product button {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.cart-items button {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+/* couleur du bouton retirer dans la partie total*/
+.total {
+    margin-top: 10px;
+    font-weight: bold;
+    color: orange;
+}
+
+
+.cart {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.cart-items {
+    list-style: none;
+    padding: 0;
+}
+/* espacement entre les different produit du panier*/
+.cart-items li{
+    margin-bottom: 5px;
+}
+
+.total {
+    margin-top: 10px;
+    font-weight: bold;
+}
